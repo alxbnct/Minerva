@@ -108,7 +108,7 @@
     (emit "xorl $~a, %eax" +tag-closure+)
     (emit "movl %eax, %edi")
     (emit "addl $~a, %esp" si)
-    (emit "call 0(%edi)")
+    (emit "call *0(%edi)")
     (emit "subl $~a, %esp" si)
     (emit "movl ~a(%esp), %edi" si)))
 
