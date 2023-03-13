@@ -10,6 +10,8 @@ Minerva was tested on SBCL under Windows and Linux, other CL implementations and
 ## Install
 The runtime is written in C, and the compiler depends on GNU as and ld to produce executables from emitted assembly code, so you will need to **install either MinGW on Windows or gcc-multilib on Linux.**
 
+On Windows, you need a c compiler targeting x86, for me I installed mingw-w64-i686-toolchain on msys2 via pacman.
+
 If you are using Quicklisp, clone the repository to your local-projects directory. Otherwise you can clone it wherever you want and load the system manually:
 ```
 (asdf:load-asd #p"/path/to/Minerva/minerva.asd")

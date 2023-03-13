@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 #define heap_size 32*1024*1024
 #define globals_size heap_size
